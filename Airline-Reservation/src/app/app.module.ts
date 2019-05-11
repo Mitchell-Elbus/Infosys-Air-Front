@@ -8,17 +8,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FlightsComponent } from './flights/flights.component';
 
 
 
 const ROUTES = [
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'flights', component: DashboardComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    FlightsComponent
   ],
   imports: [
     BrowserModule,
